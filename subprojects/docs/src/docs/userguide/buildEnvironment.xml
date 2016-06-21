@@ -197,8 +197,9 @@ systemProp.https.proxyHost=www.somehost.org
 systemProp.https.proxyPort=8080
 systemProp.https.proxyUser=userid
 systemProp.https.proxyPassword=password
-systemProp.https.nonProxyHosts=*.nonproxyrepos.com|localhost
+systemProp.http.nonProxyHosts=*.nonproxyrepos.com|localhost
 ]]></programlisting>
+            <para>Please note that http and https share the http.nonProxyHosts property.</para>
         </example>
         <para>We could not find a good overview for all possible proxy settings. One place to look are the constants
             in a file from the Ant project. Here's a
